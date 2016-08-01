@@ -91,7 +91,7 @@ $('.chart').waypoint(function() {
 
 
 /* VEGAS Home Slider */
-	
+	/*
 		$.vegas('slideshow', {
 			  backgrounds:[
 				
@@ -109,7 +109,7 @@ $('.chart').waypoint(function() {
 			$( "#vegas-prev" ).click(function() {
 			  $.vegas('previous');
 		});
-
+*/
 
 /*Contact form */
       $('#contact-form').validate({

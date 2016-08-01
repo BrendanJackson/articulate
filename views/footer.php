@@ -78,5 +78,7 @@
 <script src="<?=$assetfolder?>js/jquery.validate.js"></script>
 <script src="<?=$assetfolder?>js/waypoints.min.js"></script>
 <script src="<?=$assetfolder?>js/main.js"></script>
+<!--
+-->
 </body>
 </html>
