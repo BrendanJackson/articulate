@@ -73,6 +73,14 @@ background-color: transparent;
 .navbar-default .navbar-nav>.active>a:focus {
     background: none;
 }
+/**
+*Cart*
+*/
+
+.show_minicart:hover, .cartMenu:hover{
+    background-color: #428bca;
+    border-radius: 2em;
+}
 /* ==========================================================================
   Layout 
    ========================================================================== */

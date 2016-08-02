@@ -70,6 +70,23 @@ $member = in_array('member', $module_list);
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" id="main-menu">
                 <?php
+                if(!empty($catalog)) {
+                    $minicart_data = \sa\application\modRequest::request('site.minicart', array('disable_minicart' => $disable_minicart, 'html' => ''), '');
+                    echo "<li class=' vertically-center cart btn btn-xs' >" . $minicart_data['html'] . "</li>";
+                }?>
+                <?php
+                if(!empty($search)){
+                    echo
+                    "<li>
+                       <a href='/search'>Search</a>
+                    </li>";
+                }?>
+                <?php if(!empty($member)){
+                    echo "<li>
+                            <a href='/member/login'>Login</a>
+                         </li>";
+                }?>
+                <?php
                 $navigation = \sa\application\modRequest::request('site.navigation', $data = array('level' => 2));
                 foreach ($navigation['navigation']['page_editor'] as $menuItem){
                     ?>
